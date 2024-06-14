@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Buttons from "./Components/Buttons";
 import InputProjects from "./Components/InputProjects";
 import NoProjects from "./Components/NoProjects";
 import Sidebar from "./Components/Sidebar";
@@ -46,7 +45,7 @@ export default function App(){
   
   return(<>
   <main className="flex h-screen ">
-  <Sidebar onClick={handleOpenProject}/>
+  <Sidebar onClick={handleOpenProject} listOfProjects={handleProject.Projects} />
   {content}
   </main>
   </>)
